@@ -2,7 +2,7 @@
 
 namespace Service
 {
-    class Program
+    class Service
     {
         static void Main(string[] args)
         {
