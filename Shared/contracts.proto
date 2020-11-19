@@ -14,4 +14,10 @@ message CalculateReply {
 
 service Svc {
   rpc Calculate(CalculateRequest) returns (CalculateReply);
+  rpc Median(stream Temperature) returns (stream Temperature);
+}
+
+message Temperature {
+  int64 timestamp = 1;
+  double value = 2;
 }
