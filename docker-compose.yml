@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cfssl:
+    image: cfssl/cfssl
+    entrypoint: bash
+    working_dir: /cert
+    volumes:
+    - ./cert:/cert
